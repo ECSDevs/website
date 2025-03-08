@@ -19,8 +19,9 @@ const getRepo = cache(async (repo: string) => {
             }
         )
         .then(async (res)=>{
-            if(res.status != 200) throw new Error(await res.json().then((res)=>res.message));
-            return await res.json();
+            const resp = await res.json();
+            if(res.status != 200) throw new Error(resp.message);
+            return resp;
         });
     }catch(error){
         console.log(error);
@@ -34,7 +35,7 @@ const getRepo = cache(async (repo: string) => {
 })
 
 export default async function GitHubCard({ repo } : GitHubCardProps){
-    var response = await getRepo(repo);
+    const response = await getRepo(repo);
     return (
         <Card key={response.name} className="flex flex-col">
             <CardContent className="flex-1 p-6">

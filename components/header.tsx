@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -21,9 +22,8 @@ export default function Header() {
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white"
     >
       <div className="container px-4 h-16 flex items-center justify-between">
-        <img src="/logo-long.svg" alt="元素周期表" className="h-12 w-auto"/>
+        <Image src="/logo-long.svg" alt="元素周期表" height={48} width={200}/>
         
-
         {/* Mobile menu button */}
         <Button
           variant="ghost"
