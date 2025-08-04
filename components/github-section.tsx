@@ -8,7 +8,7 @@ import Link from "next/link"
 export default function GitHubSection() {
   const repositories = [
     "originalFactor/QwenBotQ",
-    "originalFactor/biliapi",
+    "originalFactor/QwenBotQ.NET",
     "ECSDevs/SyncFile",
     "originalFactor/embyguide",
   ]

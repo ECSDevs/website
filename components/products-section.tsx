@@ -38,18 +38,18 @@ export default function ProductsSection() {
       docsUrl: "https://sfv3x.mod.wiki/",
     },
     {
-      name: "BiliAPI",
-      description: "简易的 Python 异步 BiliBili Web API 封装",
+      name: "QwenBotQ.NET",
+      description: "基于 .NET 8.0 使用 C# 实现的现代化 QwenBotQ 移植。",
       features: [
         "简单易用",
         "异步支持",
         "高效稳定",
-        "接口清晰",
-        "文档详细",
-        "类型注解"
+        "数据兼容",
+        "易于拓展",
+        "活跃维护"
       ],
-      benefits: "迅速构建基于 BiliBili API 的应用程序",
-      imageUrl: "/biliapi.svg",
+      benefits: "迅速从 QwenBotQ 升级，纵享丝滑",
+      imageUrl: "/qwenbotq.svg",
       demoUrl: "#",
       docsUrl: "#",
     },
